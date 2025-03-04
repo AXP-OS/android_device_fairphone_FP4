@@ -34,3 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=FP4eea
 
 BUILD_FINGERPRINT := "Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP1X:user/release-keys"
+
+# enable AXP.OS vendor
+$(call inherit-product, vendor/axp/config/common.mk)
