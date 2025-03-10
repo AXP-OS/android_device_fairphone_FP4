@@ -5,3 +5,9 @@ audio.offload.video=true
 audio.deep_buffer.media=true
 ro.af.client_heap_size_kbyte=7168
 media.stagefright.audio.deep=false
+
+ro.oem_unlock_supported=0
+
+sys.oem_unlock_allowed=0
+
+ro.boot.flash.locked=0
