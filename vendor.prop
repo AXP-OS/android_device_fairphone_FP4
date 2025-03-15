@@ -141,7 +141,7 @@ debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
 # OEM Unlock
-ro.oem_unlock_supported=1
+ro.oem_unlock_supported=0
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
@@ -198,3 +198,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Zygote
 zygote.critical_window.minute=10
+
+sys.oem_unlock_allowed=0
+
+ro.boot.flash.locked=0
