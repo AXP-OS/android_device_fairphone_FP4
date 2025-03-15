@@ -4,3 +4,9 @@ persist.vendor.dpm.feature=11
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+
+ro.oem_unlock_supported=0
+
+sys.oem_unlock_allowed=0
+
+ro.boot.flash.locked=0
