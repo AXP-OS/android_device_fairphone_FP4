@@ -72,7 +72,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">true</bool>
+    <bool name="config_enableWifiDisplay">false</bool>
 
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
@@ -174,7 +174,7 @@
     <bool name="config_device_vt_available">true</bool>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
-    <bool name="config_device_wfc_ims_available">true</bool>
+    <bool name="config_device_wfc_ims_available">false</bool>
 
     <!-- Flag specifying whether VoLTE & VT should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
@@ -182,13 +182,10 @@
     <bool name="config_carrier_volte_available">true</bool>
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
-    <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
 
     <!-- IWLAN data service package name to bind to by default. -->
-    <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
 
     <!-- IWLAN network service package name to bind to by default. -->
-    <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
