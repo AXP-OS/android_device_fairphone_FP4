@@ -161,7 +161,7 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 
 # Camera components
-vendor/lib64/camera/components/com.morpho.node.drchecker.so
+vendor/lib64/camera/components/com.morpho.node.drchecker.so|08d3b67e3a86877f6b3673a468c0bae430e9a984
 vendor/lib64/camera/components/com.morpho.node.ldc.so
 vendor/lib64/camera/components/com.morpho.node.moviesolid.so
 vendor/lib64/camera/components/com.morpho.node.sat.so
