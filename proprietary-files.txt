@@ -392,8 +392,8 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Euicc
-system/app/T2mEuiccOverlay/T2mEuiccOverlay.apk
-system/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+system/app/T2mEuiccOverlay/T2mEuiccOverlay.apk|d3fdc7b7902e9ddd792fb39850cce7cd7a5bb276
+system/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|2d238bfe14473b8f578bf0d4ea61246f61d0f618
 
 # Feature enabler client
 vendor/bin/feature_enabler_client
