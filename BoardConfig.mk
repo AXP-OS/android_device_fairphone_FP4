@@ -9,7 +9,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_PATH := device/fairphone/FP4
 
 # APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -35,7 +34,6 @@ AB_OTA_PARTITIONS += \
     system \
     system_ext \
     vbmeta \
-    vbmeta_system \
     vendor
 
 # Audio
@@ -45,7 +43,7 @@ AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SSR := true
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+BOARD_SUPPORTS_SOUND_TRIGGER := false
 BOARD_USES_ALSA_AUDIO := true
 
 # Bootloader
@@ -206,12 +204,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product
-BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
-BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 # Wifi
 BOARD_WLAN_DEVICE := qcwcn
@@ -235,3 +227,6 @@ include vendor/fairphone/FP4/BoardConfigVendor.mk
 # even though we include vendor/axp/config/common.mk we need to include AXP's own BoardConfig
 # (after the above definitions & includes), too so we we can make use of the conditions within
 include vendor/axp/BoardConfigVendor.mk
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_DEBUG_INFO := false
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
